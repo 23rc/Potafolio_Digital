@@ -102,12 +102,13 @@ llevarte en un viaje por mis proyectos, ideas y descubrimientos.
         Incluye varios botones de aprendizaje, cada uno con un temario de
         aprendizaje diferente.
       </p>
+
       <a href="javascript:void(0);" class="enlace-proyecto" (click)="toggleGaleria(1)">Ver más</a>
       <div *ngIf="mostrarGaleria[1]" class="galeria-imagenes">
-        <img src="/assets/c++ (1).png" alt="Imagen 1" (click)="verImagen('/assets/c++ (1).png')">
-        <img src="/assets/c++ (2).png" alt="Imagen 2" (click)="verImagen('/assets/c++ (2).png')">
-        <img src="/assets/c++ (3).png" alt="Imagen 3" (click)="verImagen('/assets/c++ (3).png')">
-        <img src="/assets/c++ (4).png" alt="Imagen 4" (click)="verImagen('/assets/c++ (4).png')">
+        <img src="/assets/c1.png" alt="Imagen 1" (click)="verImagen('../assets/c1.png')">
+        <img src="../assets/c2.png" alt="Imagen 2" (click)="verImagen('../assets/c2.png')">
+        <img src="../assets/c3.png" alt="Imagen 3" (click)="verImagen('../assets/c3.png')">
+        <img src="../assets/c4.png" alt="Imagen 4" (click)="verImagen('../assets/c4.png')">
       </div>
       <!-- Agrega este elemento para mostrar la imagen completa -->
       <div *ngIf="imagenSeleccionada" class="imagen-completa">

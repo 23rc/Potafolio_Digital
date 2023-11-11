@@ -1,5 +1,10 @@
 
-
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita el desbordamiento del fondo */
+  }
+  
   .fondo-imagen {
     position: fixed;
     width: 100%;
@@ -24,8 +29,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
-    padding: 0.2%;
+    background-color: #333;
+    padding: 0.3%;
     color: white;
     position: fixed;
     top: 0;
@@ -40,36 +45,19 @@
 
 
 .logo img {
-    width: 20%;
-    height: 20%;
-    background-color: white;
+    width: 15%;
+    height: 15%px;
     border-radius: 50%;
+    background-color: white;
 }
 
-
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
 
 .nav-links a:hover {
     border-bottom: 2px solid white;
-}
-
-/* Estilos para pantallas grandes */
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 8px;
-  font-size: 16px;
-}
-
-/* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
-@media screen and (max-width: 768px) {
-  .nav-links {
-      display: flex;
-      flex-direction: column; /* Cambia la dirección del diseño a columna */
-      align-items: center; /* Centra los enlaces horizontalmente */
-  }
-
-  .nav-links a {
-      margin: 8px 0; /* Aumenta el espacio entre los enlaces */
-      font-size: 14px; /* Reduce el tamaño de fuente para pantallas más pequeñas */
-  }
 }
