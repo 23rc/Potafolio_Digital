@@ -1,33 +1,42 @@
-/* Common Portada Styles */
-.portada-container {
-    color: #fff; /* Color del texto ajustado para que sea visible en el fondo oscuro */
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.549);
-    
-}
-body {
-    overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
-}
-
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Common Portada Styles */
+  .portada-container {
+      height: 100%;
+      display: flex;
+      justify-content: center; /* Centra horizontalmente el contenido */
+      background-color: rgba(0, 0, 0, 0.549);
+      align-items: center; /* Centra verticalmente el contenido */
+      color: #fff; /* Color del texto ajustado para que sea visible en el fondo oscuro */
+      /* margin-right: 20%; */ /* Comentado o ajustado según tus necesidades */
+  }
 .texto-portada {
     max-width: 500px;
-    padding-right: 30%;
+    margin-left: -10%;
+    
 
 }
 
 .titulo {
     font-size: 42px;
     margin-bottom: 20px;
+    margin-left: -20%;
 }
 
 .descripcion {
     margin-top: 50px;
     font-size: 28px;
     margin-bottom: 30px;
+    margin-left: -20%;
 }
 .llamado-accion{
     margin-top: 40px;
     font-size: 25px;
+    margin-left: -20%;
 }
 
 
@@ -35,7 +44,7 @@ body {
     border-radius: 3%;
     width: 400px;
     height: 500px;
-    margin-right: 80%;
+    margin-left: 50%;
     border: 5px solid #0000005a;
     box-shadow: 0 4px 8px rgba(255, 249, 249, 0);
     filter: grayscale(20%);
