@@ -1,14 +1,18 @@
 /* Common Portada Styles */
 .portada-container {
-    height: 100%;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.549);
     color: #fff; /* Color del texto ajustado para que sea visible en el fondo oscuro */
-    margin-right: 20%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.549);
+    
+}
+body {
+    overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
 }
 
 .texto-portada {
     max-width: 500px;
+    padding-right: 30%;
+
 }
 
 .titulo {
@@ -31,7 +35,7 @@
     border-radius: 3%;
     width: 400px;
     height: 500px;
-    margin-left: 50%;
+    margin-right: 80%;
     border: 5px solid #0000005a;
     box-shadow: 0 4px 8px rgba(255, 249, 249, 0);
     filter: grayscale(20%);

@@ -4,7 +4,9 @@
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.549);
   }
-  
+  body {
+    overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
+}
   .sobre-mi h2 {
     font-size: 42px;
   }

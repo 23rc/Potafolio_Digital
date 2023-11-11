@@ -4,7 +4,9 @@
     background-color: rgba(0, 0, 0, 0.549);
     margin-top:-35px;
 
-  }
+  }body {
+    overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
+}
   
   .proyecto {
     border: 2px solid rgb(35, 0, 208); /* Cambia el color del borde según tus preferencias */

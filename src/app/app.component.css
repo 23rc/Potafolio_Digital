@@ -1,9 +1,7 @@
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Evita el desbordamiento del fondo */
-  }
+  overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
+}
   
   .fondo-imagen {
     position: fixed;
