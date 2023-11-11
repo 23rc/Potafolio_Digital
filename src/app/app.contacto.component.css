@@ -1,0 +1,53 @@
+/* contacto.component.css */
+
+.contacto {
+    background-color: rgba(0, 0, 0, 0.549);
+    padding: 150px;
+  }
+  
+  .contacto h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 46px;
+
+  }
+  
+  .contacto p {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+
+  }
+  
+  .formulario-contacto {
+    margin-top: 30px;
+  }
+  
+  .formulario-contacto p {
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+  
+  .redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redes-sociales li {
+    margin-right: 20px;
+  }
+  
+  .redes-sociales img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .redes-sociales img:hover {
+    transform: scale(1.6);
+  }
+  

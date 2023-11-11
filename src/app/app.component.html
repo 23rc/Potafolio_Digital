@@ -1,0 +1,203 @@
+<div class="fondo-imagen"></div>
+<nav class="navbar">
+  <div class="logo">
+    <img src="/assets/logo.png" alt="Logo">
+  </div>
+  <div class="nav-links">
+    <a href="#portada">Inicio</a>
+    <a href="#sobre-mi">Sobre Mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+<!-- portada.component.html -->
+
+<div class="portada-container" id="portada">
+  <div class="texto-portada">
+    <h1 class="titulo">¡Hola! Soy Roberto Carlos Yoxón Cuj</h1>
+    <p class="descripcion">Estudiante apasionado de Ingeniería en Sistemas con experiencia en diversas tecnologías. ¡Bienvenido a mi rincón digital!</p>
+    <div class="texto-portada">
+      <!-- Otro contenido... -->
+      <div class="habilidades-destacadas">
+          <h3>Habilidades Destacadas</h3>
+          <ul>
+              <li>
+                  <img src="/assets/desarrolloWeb.png" alt="Habilidad 1">
+                  Desarrollo Web
+              </li>
+              <li>
+                  <img src="/assets/javasCript.png" alt="Habilidad 2">
+                  Programación en JavaScript
+              </li>
+              <li>
+                  <img src="/assets/cSharp.png" alt="Habilidad 3">
+                  Programación en C#
+              </li>
+              <li>
+                <img src="/assets/c++.png" alt="Habilidad 3">
+                Programación en C++
+            </li>
+              <!-- Agrega imágenes y habilidades adicionales según sea necesario -->
+          </ul>
+      </div>
+      <!-- Otro contenido... -->
+  </div>
+  
+    <div class="llamado-accion">
+      <p>Descubre más sobre mis proyectos y habilidades. ¿Listo para iniciar un proyecto juntos?</p>
+    </div>
+  </div>
+  <div class="imagen-container">
+    <img src="assets/perfil.jpeg" alt="Tu Imagen">
+  </div>
+</div>
+
+
+
+<!-- sobre-mi.component.html -->
+
+<section class="sobre-mi" id="sobre-mi">
+  <h2>Sobre Mí</h2>
+  <p>
+¡Hola! Bienvenidos a mi rincón digital, es un auténtico placer saludarte. 
+Me llamo Roberto Carlos Yoxón Cuj, y aquí en este espacio virtual, quiero 
+compartir contigo mi pasión por la Ingeniería en Sistemas y la creación de 
+experiencias web cautivadoras. Mi andar académico ha construido una base 
+sólida en el vasto mundo de la tecnología, y a través de esta página, quiero 
+llevarte en un viaje por mis proyectos, ideas y descubrimientos.
+  </p>
+  <p>
+    Como estudiante apasionado, he dedicado tiempo y esfuerzo a la realización
+     de páginas web que no solo cumplen con los estándares técnicos, sino que 
+     también buscan sorprender y cautivar a quienes las visitan. En este rincón 
+     digital, encontrarás una mezcla de conocimientos teóricos y aplicados, donde 
+     la creatividad se encuentra con la funcionalidad.
+ </p>
+ <p>
+  Soy un entusiasta de los proyectos tecnológicos automatizados, y mi objetivo es 
+  compartir contigo no solo lo que he aprendido, sino también inspirarte a explorar 
+  el emocionante mundo de la ingeniería y la tecnología. ¡Acompáñame en esta travesía 
+  digital, donde la innovación y el conocimiento se encuentran!
+</p>
+  <h3>Intereses</h3>
+  <p >Además de mi interés por la tecnología, también encuentro una gran alegría en mis 
+    otras aficiones. Disfruto mucho de la música y tengo la habilidad de tocar varios 
+    instrumentos. Además, me divierto practicando distintas disciplinas deportivas. 
+    Esta combinación de intereses no solo amplía mi perspectiva, sino que también muestra 
+    mi naturaleza equilibrada y apasionada. Aunque me apasiona el mundo tecnológico, también 
+    encuentro felicidad y satisfacción en la expresión artística y los desafíos físicos.</p>
+    <div id="proyectos"></div>
+</section>
+<!-- proyectos.component.html -->
+
+<section class="proyectos" >
+  <h2 >Proyectos</h2 >
+
+  <div class="proyecto">
+    <div class="descripcion-proyecto">
+      <h3>Geografía de Guatemala</h3>
+      <p>
+        Este fue uno de mis primeros proyectos, basado en un sistema 
+        educativo y creativo centrado en la geografía de mi bella Guatemala. 
+        Incluye varios botones de aprendizaje, cada uno con un temario de
+        aprendizaje diferente.
+      </p>
+      <a href="javascript:void(0);" class="enlace-proyecto" (click)="toggleGaleria(1)">Ver más</a>
+      <div *ngIf="mostrarGaleria[1]" class="galeria-imagenes">
+        <img src="/assets/c++ (1).png" alt="Imagen 1" (click)="verImagen('/assets/c++ (1).png')">
+        <img src="/assets/c++ (2).png" alt="Imagen 2" (click)="verImagen('/assets/c++ (2).png')">
+        <img src="/assets/c++ (3).png" alt="Imagen 3" (click)="verImagen('/assets/c++ (3).png')">
+        <img src="/assets/c++ (4).png" alt="Imagen 4" (click)="verImagen('/assets/c++ (4).png')">
+      </div>
+      <!-- Agrega este elemento para mostrar la imagen completa -->
+      <div *ngIf="imagenSeleccionada" class="imagen-completa">
+        <img [src]="imagenSeleccionada" alt="Imagen Completa">
+      </div>
+      <div *ngIf="imagenSeleccionada" class="imagen-completa" (click)="cerrarImagen()">
+        <img [src]="imagenSeleccionada" alt="Imagen Completa" (click)="$event.stopPropagation()">
+      </div>
+    </div>
+  </div>
+
+  <div class="proyecto">
+    <div class="descripcion-proyecto">
+      <h3>Traductor C++</h3>
+      <p>
+        Este proyecto, desarrollado en C#, funciona como un compilador, actuando 
+        como un traductor de lenguaje. Está diseñado para traducir un lenguaje 
+        creado por el usuario al lenguaje de C++, proporcionando información sobre 
+        errores semánticos, sintácticos y léxicos, así como avisos para facilitar 
+        la corrección de posibles errores.
+      </p>
+      <a href="javascript:void(0);" class="enlace-proyecto" (click)="toggleGaleria(2)">Ver más</a>
+      <div *ngIf="mostrarGaleria[2]" class="galeria-imagenes">
+        <img src="/assets/csharp2.png" alt="Imagen 1" (click)="verImagen('/assets/csharp2.png')">
+
+      </div>
+      <!-- Agrega este elemento para mostrar la imagen completa -->
+      <div *ngIf="imagenSeleccionada" class="imagen-completa">
+        <img [src]="imagenSeleccionada" alt="Imagen Completa">
+      </div>
+      <div *ngIf="imagenSeleccionada" class="imagen-completa" (click)="cerrarImagen()">
+        <img [src]="imagenSeleccionada" alt="Imagen Completa" (click)="$event.stopPropagation()">
+      </div>
+    </div>
+  </div>
+  <div class="proyecto">
+    <div class="descripcion-proyecto">
+      <h3>Proyecto de Producción de Lechones</h3>
+      <p>
+        Este proyecto Angular CLI se centra en la eficiente gestión de la producción de lechones. 
+        Desarrollado para ofrecer una solución integral, la aplicación permite el seguimiento detallado 
+        de cada etapa del proceso de producción. Desde la reproducción hasta el destete, facilita la 
+        planificación, el control de la salud y la recopilación de datos clave. Con una interfaz intuitiva, 
+        notificaciones útiles y capacidad para generar informes personalizados, esta aplicación está diseñada 
+        para mejorar la eficiencia en las operaciones de producción porcina.
+      </p>
+      <a href="javascript:void(0);" class="enlace-proyecto" (click)="toggleGaleria(3)">Ver más</a>
+      <div *ngIf="mostrarGaleria[3]" class="galeria-imagenes">
+        <img src="/assets/lechon1.PNG" alt="Imagen 1" (click)="verImagen('/assets/lechon1.PNG')">
+        <img src="/assets/lechon2.PNG" alt="Imagen 1" (click)="verImagen('/assets/lechon2.PNG')">
+        <img src="/assets/lechon3.PNG" alt="Imagen 1" (click)="verImagen('/assets/lechon3.PNG')">
+        <img src="/assets/lechon4.PNG" alt="Imagen 1" (click)="verImagen('/assets/lechon4.PNG')">
+
+      </div>
+      <!-- Agrega este elemento para mostrar la imagen completa -->
+      <div *ngIf="imagenSeleccionada" class="imagen-completa">
+        <img [src]="imagenSeleccionada" alt="Imagen Completa">
+      </div>
+      <div *ngIf="imagenSeleccionada" class="imagen-completa" (click)="cerrarImagen()">
+        <img [src]="imagenSeleccionada" alt="Imagen Completa" (click)="$event.stopPropagation()">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contacto.component.html -->
+
+<section class="contacto" id="contacto">
+  <h2>Contacto</h2>
+  <p>
+    ¡Estoy emocionado de conectar contigo! Si tienes alguna pregunta, 
+    comentario o simplemente quieres charlar, no dudes en ponerte en contacto conmigo. 
+    Puedes enviarme o encontrarme en mis redes sociales.
+  </p>
+  <div class="formulario-contacto">
+    <!-- Agrega aquí tu formulario de contacto si lo tienes -->
+    <p>O, si lo prefieres, contáctame a través de:</p>
+    <ul class="redes-sociales">
+      <li>
+        <a href="https://www.linkedin.com/in/roberto-carlos-yoxon-cuj-8660a3271/" target="_blank">
+          <img src="/assets/linkedin.png" alt="LinkedIn">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=100009677192504" target="_blank">
+          <img src="/assets/facebook.webp" alt="Twitter">
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+</section>
