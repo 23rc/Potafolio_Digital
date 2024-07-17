@@ -56,7 +56,7 @@
     </div>
   </div>
   <div class="imagen-container">
-    <img src="assets/perfil.jpeg" alt="Tu Imagen">
+    <img src="assets/Perfil.png" alt="Tu Imagen">
   </div>
 </div>
 
@@ -110,8 +110,7 @@ llevarte en un viaje por mis proyectos, ideas y descubrimientos.
         Incluye varios botones de aprendizaje, cada uno con un temario de
         aprendizaje diferente.
       </p>
-
-      <a href="javascript:void(0);" class="enlace-proyecto" (click)="toggleGaleria(1)">Ver más</a>
+      <button class="btn-proyecto" (click)="toggleGaleria(1)">Ver más</button>
       <div *ngIf="mostrarGaleria[1]" class="galeria-imagenes">
         <img src="/assets/c1.png" alt="Imagen 1" (click)="verImagen('../assets/c1.png')">
         <img src="../assets/c2.png" alt="Imagen 2" (click)="verImagen('../assets/c2.png')">
@@ -138,7 +137,7 @@ llevarte en un viaje por mis proyectos, ideas y descubrimientos.
         errores semánticos, sintácticos y léxicos, así como avisos para facilitar 
         la corrección de posibles errores.
       </p>
-      <a href="javascript:void(0);" class="enlace-proyecto" (click)="toggleGaleria(2)">Ver más</a>
+      <button class="btn-proyecto" (click)="toggleGaleria(2)">Ver más</button>
       <div *ngIf="mostrarGaleria[2]" class="galeria-imagenes">
         <img src="/assets/csharp2.png" alt="Imagen 1" (click)="verImagen('/assets/csharp2.png')">
 
@@ -163,7 +162,7 @@ llevarte en un viaje por mis proyectos, ideas y descubrimientos.
         notificaciones útiles y capacidad para generar informes personalizados, esta aplicación está diseñada 
         para mejorar la eficiencia en las operaciones de producción porcina.
       </p>
-      <a href="javascript:void(0);" class="enlace-proyecto" (click)="toggleGaleria(3)">Ver más</a>
+      <button class="btn-proyecto" (click)="toggleGaleria(3)">Ver más</button>
       <div *ngIf="mostrarGaleria[3]" class="galeria-imagenes">
         <img src="/assets/lechon1.PNG" alt="Imagen 1" (click)="verImagen('/assets/lechon1.PNG')">
         <img src="/assets/lechon2.PNG" alt="Imagen 1" (click)="verImagen('/assets/lechon2.PNG')">
@@ -187,9 +186,9 @@ llevarte en un viaje por mis proyectos, ideas y descubrimientos.
 <section class="contacto" id="contacto">
   <h2>Contacto</h2>
   <p>
-    ¡Estoy emocionado de conectar contigo! Si tienes alguna pregunta, 
-    comentario o simplemente quieres charlar, no dudes en ponerte en contacto conmigo. 
-    Puedes enviarme o encontrarme en mis redes sociales.
+    Estoy disponible para conectar contigo. Si tienes alguna pregunta, 
+    comentario o deseas discutir una colaboración, no dudes en ponerte en 
+    contacto conmigo.
   </p>
   <div class="formulario-contacto">
     <!-- Agrega aquí tu formulario de contacto si lo tienes -->
@@ -200,12 +199,6 @@ llevarte en un viaje por mis proyectos, ideas y descubrimientos.
           <img src="/assets/linkedin.png" alt="LinkedIn">
         </a>
       </li>
-      <li>
-        <a href="https://www.facebook.com/profile.php?id=100009677192504" target="_blank">
-          <img src="/assets/facebook.webp" alt="Twitter">
-        </a>
-      </li>
-
     </ul>
   </div>
 
