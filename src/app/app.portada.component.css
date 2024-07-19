@@ -80,7 +80,6 @@ html, body {
 @media only screen and (max-width: 600px) {
     .portada-container {
         flex-direction: column; /* Cambia la dirección del flex para que los elementos se apilen verticalmente */
-        padding: 50px; /* Añade algo de padding */
         align-items: center; /* Centra los elementos horizontalmente */
     }
 
