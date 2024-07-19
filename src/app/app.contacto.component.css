@@ -1,7 +1,6 @@
 /* contacto.component.css */
 
 .contacto {
-    background-color: rgba(0, 0, 0, 0.549);
     padding: 200px;
   }
   
@@ -55,8 +54,9 @@
 @media only screen and (max-width: 600px) {
 
   .contacto {
-    background-color: rgba(0, 0, 0, 0.549);
-    padding: 100px;
+    padding: 20px;
+    margin-top: 200px;
+
   }
   
   .contacto h2 {
@@ -74,7 +74,7 @@
   }
   
   .formulario-contacto {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   
   .formulario-contacto p {
@@ -97,6 +97,7 @@
   .redes-sociales img {
     width: 60px;
     height: 60px;
+    margin-bottom: 250px;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
   }

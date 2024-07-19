@@ -2,6 +2,11 @@
 body {
   overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
 }
+
+.todo{
+  color: #fff; /* Cambia el color del texto según tus preferencias */
+  background-color: rgba(0, 0, 0, 0.549);
+}
 .menu-toggle  {
   display: none;
 }
@@ -81,8 +86,8 @@ body {
     flex-direction: column;
     width: 150px; /* Ajusta el ancho según sea necesario */
     position: absolute;
-    margin-left: 220px;
-    top: 55px; /* Ajusta según sea necesario para que esté justo debajo del ícono */
+    margin-left: 250px;
+    top: 54px; /* Ajusta según sea necesario para que esté justo debajo del ícono */
     left: 0; /* Alinea el menú a la izquierda del contenedor */
     background-color: #120829;
     align-items: center; /* Centra los enlaces horizontalmente */

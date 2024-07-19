@@ -2,7 +2,7 @@
 .sobre-mi {
     color: #fff; /* Color del texto ajustado para que sea visible en el fondo oscuro */
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.549);
+
   }
   body {
     overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
@@ -19,3 +19,29 @@
     font-size: 42px;
   }
   
+
+/* Para móviles */
+@media only screen and (max-width: 600px) {
+
+/* Sobre Mí Styles */
+.sobre-mi {
+  color: #fff; /* Color del texto ajustado para que sea visible en el fondo oscuro */
+  padding: 27px;
+
+}
+body {
+  overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
+}
+.sobre-mi h2 {
+  font-size: 28px;
+}
+
+.sobre-mi p {
+  font-size: 18px;
+}
+
+.sobre-mi h3 {
+  font-size: 28px;
+}
+
+}

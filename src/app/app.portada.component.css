@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido */
-    background-color: rgba(0, 0, 0, 0.549);
+
     align-items: center; /* Centra verticalmente el contenido */
     color: #fff; /* Color del texto ajustado para que sea visible en el fondo oscuro */
     flex-direction: row; /* Por defecto, los elementos están en una fila */
