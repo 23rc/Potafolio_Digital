@@ -2,7 +2,9 @@
 body {
   overflow-y: hidden; /* Desactiva el riel vertical del cuerpo de la página */
 }
-  
+.menu-toggle  {
+  display: none;
+}
   .fondo-imagen {
     position: fixed;
     width: 100%;
@@ -58,4 +60,49 @@ body {
 
 .nav-links a:hover {
     border-bottom: 2px solid white;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .fondo-imagen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/fondo7.jpg'); /* Ruta al gif de fondo */
+    background-size: cover;
+    opacity: 1; /* Ajusta la opacidad según tu preferencia */
+    z-index: -1; /* Coloca el fondo detrás del contenido de la página */
+  }
+  .menu-toggle {
+    display: block; /* Mostrar el botón de hamburguesa en dispositivos móviles */
+  }
+
+  .nav-links {
+    display: none; /* Ocultar el menú por defecto en móviles */
+    flex-direction: column;
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    position: absolute;
+    margin-left: 300px;
+    top: 50px; /* Ajusta según sea necesario para que esté justo debajo del ícono */
+    left: 0; /* Alinea el menú a la izquierda del contenedor */
+    background-color: #120829;
+    align-items: center; /* Centra los enlaces horizontalmente */
+    border-radius: 5px; /* Opcional: Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: Agrega una sombra para mayor visibilidad */
+  }
+
+  .nav-links.active {
+    display: flex; /* Mostrar el menú cuando esté activo */
+  }
+
+  .nav-links a {
+    margin: 15px 0; /* Espacio entre los enlaces en móviles */
+    font-size: 18px; /* Ajusta el tamaño de fuente para móviles */
+  }
+
+  .hamburger-icon {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    filter: invert(100%); /* Cambia el color del ícono a blanco */
+
+  }
 }
