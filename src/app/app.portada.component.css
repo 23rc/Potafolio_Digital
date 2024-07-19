@@ -79,8 +79,8 @@ html, body {
 /* Para móviles */
 @media only screen and (max-width: 600px) {
     .portada-container {
-        flex-direction: column; /* Cambia la dirección del flex para que los elementos se apilen verticalmente */
-        align-items: center; /* Centra los elementos horizontalmente */
+    margin: -20px;
+       
     }
 
     .texto-portada {
@@ -93,13 +93,14 @@ html, body {
     .titulo {
         font-size: 28px;
         margin-left: 0;
+        margin-top: 50px;
 
     }
 
     .descripcion {
         font-size: 18px;
         margin-left: 0;
-        margin-top: 8px;
+        margin-top: 15px;
         margin-bottom: 5px;
     }
 
@@ -133,7 +134,7 @@ html, body {
         font-size: 18px;
     }
     .habilidades-destacadas h3 {
-
+        margin-top: 50px;
         font-size: 18px;
     }
 
