@@ -84,12 +84,12 @@ body {
   .nav-links {
     display: none; /* Ocultar el menú por defecto en móviles */
     flex-direction: column;
-    width: 150px; /* Ajusta el ancho según sea necesario */
+    width: 100px; /* Ajusta el ancho según sea necesario */
     position: absolute;
-    margin-left: 250px;
-    top: 54px; /* Ajusta según sea necesario para que esté justo debajo del ícono */
+    margin-left:257px;
+    top: 12px; /* Ajusta según sea necesario para que esté justo debajo del ícono */
     left: 0; /* Alinea el menú a la izquierda del contenedor */
-    background-color: #120829;
+    background-color: #ffffff;
     align-items: center; /* Centra los enlaces horizontalmente */
     border-radius: 5px; /* Opcional: Agrega bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: Agrega una sombra para mayor visibilidad */
@@ -100,7 +100,8 @@ body {
   }
 
   .nav-links a {
-    margin: 15px 0; /* Espacio entre los enlaces en móviles */
+    color: black;
+    margin: 5px 0; /* Espacio entre los enlaces en móviles */
     font-size: 18px; /* Ajusta el tamaño de fuente para móviles */
   }
 
